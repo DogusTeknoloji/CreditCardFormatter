@@ -68,6 +68,16 @@ public final class CreditCardFormatter {
         return formatter.formattedString(from: strippedString, delimiter: delimiter, repeatLastBlock: shouldRepeatLastBlock(for: formatter))
     }
     
+    public func formattedMaskedString(from string: String, maskCharacter: Character) -> String {
+        let maskedString = string.filter { $0.isWholeNumber || $0 == maskCharacter }
+        let formatter = selectFormatter(from: maskedString)
+        return formatter.formattedString(
+            from: maskedString,
+            delimiter: delimiter,
+            repeatLastBlock: shouldRepeatLastBlock(for: formatter)
+        )
+    }
+    
     public func brand(from string: String) -> String {
         let strippedString = removeNonDecimalDigits(from: string)
         let formatter = selectFormatter(from: strippedString)
