@@ -28,7 +28,7 @@ import Foundation
 
 public protocol CreditCardFormat {
     var blocks: [Int] { get }
-    var brand: String { get }
+    var brand: CreditCardBrand { get }
     func shouldFormat(_ string: String) -> Bool
     func isValid(_ string: String) -> Bool
 }

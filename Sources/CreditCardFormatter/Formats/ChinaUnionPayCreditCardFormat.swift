@@ -26,13 +26,9 @@
 
 import Foundation
 
-public extension CreditCardBrands {
-    static let chinaUnionPay = "China UnionPay"
-}
-
 public struct ChinaUnionPayCreditCardFormat: CreditCardFormat {
     public let blocks: [Int] = [4, 4, 4, 4]
-    public let brand: String = CreditCardBrands.chinaUnionPay
+    public let brand: CreditCardBrand = .chinaUnionPay
 
     private let maxLength = 19
     private let minLength = 13

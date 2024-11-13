@@ -26,13 +26,9 @@
 
 import Foundation
 
-public extension CreditCardBrands {
-    static let masterCard = "Master Card"
-}
-
 public struct MasterCardCreditCardFormat: CreditCardFormat {
     public let blocks: [Int] = [4, 4, 4, 4]
-    public let brand: String = CreditCardBrands.masterCard
+    public let brand: CreditCardBrand = .masterCard
     
     public init() {}
     

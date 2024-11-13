@@ -26,13 +26,9 @@
 
 import Foundation
 
-public extension CreditCardBrands {
-    static let jcb = "JCB"
-}
-
 public struct JCBCreditCardFormat: CreditCardFormat {
     public let blocks: [Int] = [4, 4, 4, 4, 3]
-    public let brand: String = CreditCardBrands.jcb
+    public let brand: CreditCardBrand = .jcb
     
     private let maxLength = 19
     private let minLength = 16

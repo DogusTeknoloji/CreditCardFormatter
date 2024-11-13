@@ -81,7 +81,7 @@ public final class CreditCardFormatter {
     public func brand(from string: String) -> String {
         let strippedString = removeNonDecimalDigits(from: string)
         let formatter = selectFormatter(from: strippedString)
-        return formatter.brand
+        return formatter.brand.rawValue
     }
 
     public func isValid(_ string: String) -> Bool {

@@ -32,6 +32,7 @@
 		65DE266023A2FD8700916E9C /* DinersClubInternationalCreditCardFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE265F23A2FD8700916E9C /* DinersClubInternationalCreditCardFormat.swift */; };
 		65DE266223A533B300916E9C /* DinersClubInternationalCreditCardFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE266123A533B300916E9C /* DinersClubInternationalCreditCardFormatTests.swift */; };
 		65DE34132351018400B9F313 /* UnknownCreditCardFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DE34122351018400B9F313 /* UnknownCreditCardFormatTests.swift */; };
+		876A74802CE536A200B7BB5D /* CreditCardBrand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A747F2CE536A200B7BB5D /* CreditCardBrand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		65DE265F23A2FD8700916E9C /* DinersClubInternationalCreditCardFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinersClubInternationalCreditCardFormat.swift; sourceTree = "<group>"; };
 		65DE266123A533B300916E9C /* DinersClubInternationalCreditCardFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinersClubInternationalCreditCardFormatTests.swift; sourceTree = "<group>"; };
 		65DE34122351018400B9F313 /* UnknownCreditCardFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownCreditCardFormatTests.swift; sourceTree = "<group>"; };
+		876A747F2CE536A200B7BB5D /* CreditCardBrand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardBrand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,8 +183,9 @@
 				65D0DD992399C7C300E6B465 /* DiscoverCreditCardFormat.swift */,
 				65DE265D23A2FBA900916E9C /* JCBCreditCardFormat.swift */,
 				658A37C32399B5F5001B79FE /* MasterCardCreditCardFormat.swift */,
-				65CCBE66234A2F0D0072B498 /* UnknownCreditCardFormat.swift */,
 				650342A82329201500F5E01C /* VISACreditCardFormat.swift */,
+				65CCBE66234A2F0D0072B498 /* UnknownCreditCardFormat.swift */,
+				876A747F2CE536A200B7BB5D /* CreditCardBrand.swift */,
 			);
 			path = Formats;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				650342A6232849A000F5E01C /* CreditCardFormat.swift in Sources */,
 				65DE266023A2FD8700916E9C /* DinersClubInternationalCreditCardFormat.swift in Sources */,
 				658A37C42399B5F5001B79FE /* MasterCardCreditCardFormat.swift in Sources */,
+				876A74802CE536A200B7BB5D /* CreditCardBrand.swift in Sources */,
 				650342A92329201500F5E01C /* VISACreditCardFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

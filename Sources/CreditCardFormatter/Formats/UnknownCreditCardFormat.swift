@@ -26,13 +26,9 @@
 
 import Foundation
 
-public enum CreditCardBrands {
-    public static let unknown = "Unknown"
-}
-
 struct UnknownCreditCardFormat: CreditCardFormat {
     public let blocks: [Int] = [4]
-    public let brand: String = CreditCardBrands.unknown
+    public let brand: CreditCardBrand = .unknown
 
     public init() {}
 
