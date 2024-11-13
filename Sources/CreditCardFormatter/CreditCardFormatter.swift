@@ -89,6 +89,13 @@ public final class CreditCardFormatter {
         let formatter = selectFormatter(from: strippedString)
         return formatter.isValid(strippedString)
     }
+    
+    public func cvvCodeLength(from string: String) -> Int {
+        let strippedString = removeNonDecimalDigits(from: string)
+        let matchedFormatter = selectFormatter(from: strippedString)
+        let cvvLength = matchedFormatter.cvvLength
+        return cvvLength
+    }
 }
 
 extension String {

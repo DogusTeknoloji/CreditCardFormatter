@@ -29,7 +29,8 @@ import Foundation
 public struct VISACreditCardFormat: CreditCardFormat {
     public let blocks: [Int] = [4, 4, 4, 4]
     public let brand: CreditCardBrand = .visa
-
+    public let cvvLength: Int = 3
+    
     public init() {}
 
     public func shouldFormat(_ string: String) -> Bool {

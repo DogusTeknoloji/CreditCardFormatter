@@ -29,6 +29,7 @@ import Foundation
 public struct DinersClubInternationalCreditCardFormat: CreditCardFormat {
     public let blocks: [Int] = [4, 6, 4]
     public let brand: CreditCardBrand = .dinersClubInternational
+    public let cvvLength: Int = 3
     
     private let maxLength = 19
     private let minLength = 14

@@ -29,6 +29,7 @@ import Foundation
 public struct MasterCardCreditCardFormat: CreditCardFormat {
     public let blocks: [Int] = [4, 4, 4, 4]
     public let brand: CreditCardBrand = .masterCard
+    public let cvvLength: Int = 3
     
     public init() {}
     

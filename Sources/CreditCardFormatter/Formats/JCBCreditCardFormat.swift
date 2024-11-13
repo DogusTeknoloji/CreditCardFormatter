@@ -29,6 +29,7 @@ import Foundation
 public struct JCBCreditCardFormat: CreditCardFormat {
     public let blocks: [Int] = [4, 4, 4, 4, 3]
     public let brand: CreditCardBrand = .jcb
+    public let cvvLength: Int = 3
     
     private let maxLength = 19
     private let minLength = 16

@@ -29,7 +29,8 @@ import Foundation
 public struct ChinaUnionPayCreditCardFormat: CreditCardFormat {
     public let blocks: [Int] = [4, 4, 4, 4]
     public let brand: CreditCardBrand = .chinaUnionPay
-
+    public let cvvLength: Int = 3
+    
     private let maxLength = 19
     private let minLength = 13
 
